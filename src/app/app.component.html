@@ -1,0 +1,6 @@
+<!-- <search-bar></search-bar>
+<page-list></page-list> -->
+<div class="container">
+    <app-search-bar (submitted)="onTerm($event)"></app-search-bar>
+    <app-page-list *ngIf="pages.length > 0" [pages]="pages"></app-page-list>
+</div>
